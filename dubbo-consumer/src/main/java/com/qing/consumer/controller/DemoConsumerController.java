@@ -12,12 +12,12 @@ public class DemoConsumerController {
 
     @Reference(version = "${demo.service.version}",
             application = "${dubbo.application.id}",
-            url = "dubbo://39.106.135.173:12345")
+            url = "dubbo://127.0.0.1:12345")
     private DemoService demoService;
 
     @Reference(version = "${demo.service.version}",
             application = "${dubbo.application.id}",
-            url = "dubbo://39.106.135.173:12345")
+            url = "dubbo://127.0.0.1:12345")
     private StudentService studentService;
 
     @GetMapping("/sayHello")
